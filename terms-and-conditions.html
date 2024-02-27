@@ -15,6 +15,42 @@
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        #google_translate_element {
+            color: transparent;
+        }
+
+        #google_translate_element a {
+            display: none;
+        }
+
+        div.goog-te-gadget {
+            color: transparent !important;
+        }
+
+        /* Targeting the Google Translate dropdown */
+        .goog-te-combo {
+            /* Your custom styles here */
+            background-color: #f2f2f2;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            width: 200px;
+            /* Adjust width as needed */
+        }
+
+        /* Styling the arrow icon */
+        .goog-te-gadget-icon {
+            display: none;
+            /* Hide the default arrow icon */
+        }
+    </style>
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Title -->
     <title>Bitwidefx - Terms Of Use</title>
@@ -29,6 +65,16 @@
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" class="navbar-logo" alt="logo">
             </a>
+            <div id="google_translate_element"></div>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en', layout:
+                            google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay:
+                            false, gaTrack: true, gaId: 'YOUR_API_KEY'
+                    }, 'google_translate_element');
+                }
+            </script>
             <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
                 aria-controls="navbarOffcanvas">
                 <span class="burger-menu">
