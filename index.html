@@ -17,36 +17,41 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/popup-css.css">
     <style>
-  #google_translate_element {
-  color: transparent;
-}
-#google_translate_element a {
-  display: none;
-}
-div.goog-te-gadget {
-  color: transparent !important;
-}
+        #google_translate_element {
+            color: transparent;
+        }
 
-/* Targeting the Google Translate dropdown */
-.goog-te-combo {
-  /* Your custom styles here */
-  background-color: #f2f2f2;
-  color: #333;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-  width: 200px; /* Adjust width as needed */
-}
+        #google_translate_element a {
+            display: none;
+        }
 
-/* Styling the arrow icon */
-.goog-te-gadget-icon {
-  display: none; /* Hide the default arrow icon */
-}
-</style>
+        div.goog-te-gadget {
+            color: transparent !important;
+        }
 
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        /* Targeting the Google Translate dropdown */
+        .goog-te-combo {
+            /* Your custom styles here */
+            background-color: #f2f2f2;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            width: 200px;
+            /* Adjust width as needed */
+        }
+
+        /* Styling the arrow icon */
+        .goog-te-gadget-icon {
+            display: none;
+            /* Hide the default arrow icon */
+        }
+    </style>
+
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Title -->
     <title>Welcome to Bitwidefx</title>
@@ -62,15 +67,15 @@ div.goog-te-gadget {
                 <img src="assets/images/logo.png" class="navbar-logo" alt="logo">
             </a>
             <div id="google_translate_element"></div>
-                        <script type="text/javascript">
-      function googleTranslateElementInit() {
-         new google.translate.TranslateElement({
-            pageLanguage: 'en', layout: 
-            google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: 
-            false, gaTrack: true, gaId: 'YOUR_API_KEY'
-            }, 'google_translate_element');
-      }
-   </script>
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en', layout:
+                            google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay:
+                            false, gaTrack: true, gaId: 'YOUR_API_KEY'
+                    }, 'google_translate_element');
+                }
+            </script>
             <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#navbarOffcanvas" role="button"
                 aria-controls="navbarOffcanvas">
                 <span class="burger-menu">
@@ -600,21 +605,22 @@ div.goog-te-gadget {
 
     <section class="custom-social-proof">
         <div class="custom-notification">
-          <div class="custom-notification-container">
-            <div class="custom-notification-image-wrapper">
-              <img id="map1" src="assets/images/chat (1).png" style="width: 50px; height: 50px">
+            <div class="custom-notification-container">
+                <div class="custom-notification-image-wrapper">
+                    <img id="map1" src="assets/images/chat (1).png" style="width: 50px; height: 50px">
+                </div>
+                <div class="custom-notification-content-wrapper">
+                    <p class="custom-notification-content">
+                        <span id="username">Edison</span> from <span id="country">London</span><br>just earned <span
+                            id="product"> $20,343</span>
+                        <small>
+
+                            <span id="time">5</span> mins ago &nbsp;
+                        </small>
+                    </p>
+                </div>
             </div>
-            <div class="custom-notification-content-wrapper">
-              <p class="custom-notification-content">
-                <span id="username">Edison</span> from <span id="country">London</span><br>just earned <span id="product"> $20,343</span>
-                <small>
-                
-                  <span id="time">5</span> mins ago &nbsp; 
-                </small>
-              </p>
-            </div>
-          </div>
-          <div class="custom-close"></div>
+            <div class="custom-close"></div>
         </div>
     </section>
 
