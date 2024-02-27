@@ -291,6 +291,55 @@
         </div>
         <!-- End terms & conditions area -->
 
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 fixed-bottom">
+                        <div class="justify-content-center mb-4">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Ticker Tape</span></a> by TradingView</div>-->
+                                <script type="text/javascript"
+                                    src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                                        {
+                                            "symbols": [
+                                                {
+                                                    "proName": "FOREXCOM:SPXUSD",
+                                                    "title": "S&P 500"
+                                                },
+                                                {
+                                                    "proName": "FOREXCOM:NSXUSD",
+                                                    "title": "Nasdaq 100"
+                                                },
+                                                {
+                                                    "proName": "FX_IDC:EURUSD",
+                                                    "title": "EUR/USD"
+                                                },
+                                                {
+                                                    "proName": "BITSTAMP:BTCUSD",
+                                                    "title": "BTC/USD"
+                                                },
+                                                {
+                                                    "proName": "BITSTAMP:ETHUSD",
+                                                    "title": "ETH/USD"
+                                                }
+                                            ],
+                                                "showSymbolLogo": true,
+                                                    "colorTheme": "light",
+                                                        "isTransparent": false,
+                                                            "displayMode": "adaptive",
+                                                                "locale": "en"
+                                        }
+                                    </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer Start -->
         <div class="footer-warp pt-100 pb-75 bg-f9f2f3">
             <div class="container">
@@ -377,6 +426,7 @@
 
 
         <!-- Links of JS File -->
+        <script src="//code.tidio.co/v9vxqmhmd2nhrkak4aspnlhqmbajopxr.js" async></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/swiper-bundle.min.js"></script>
